@@ -1,16 +1,14 @@
-//print details
 
-let details= {
-  name: "Ashutosh",
-  age: 100,
-  sex: "Male",
-  location: "Ujjain"
+let obj = {
+  l: 5,
+  w: 10,
+perimeter: function (){
+  console.log (2 * (this.l + this.w));
+},
+area: function(){
+  console.log(this.l * this.w);
+}
 };
 
-// bracket noation
-  console.log(name["location"]);
-  console.log(name["sex"]);
-
-//dot notation
-  console.log(name.name);
-  console.log(name.age);
+obj.perimeter();
+obj.area();
